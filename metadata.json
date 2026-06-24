@@ -1,0 +1,6 @@
+{
+  "name": "Interactive 3D Hero Section",
+  "description": "A highly-polished landing hero page featuring responsive Spline 3D scenes, dual custom spotlights, andSpace Grotesk display typography.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
