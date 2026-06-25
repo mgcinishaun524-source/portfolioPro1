@@ -27,18 +27,17 @@ export const projects = [
     image: "https://images.unsplash.com/photo-1472851294608-062f824d29cc?q=80&w=800&auto=format&fit=crop"
   },
   {
-    title: "MARKET PLACE 2ND",
-    description: "An advanced iteration of the digital marketplace implementing caching layers, enhanced security protocols, and an improved responsive frontend.",
-    githubUrl: "https://github.com/mgcinishaun524-source/Market_Place_2nd_Website.git",
-    demoUrl: "https://github.com/mgcinishaun524-source/Market_Place_2nd_Website.git",
-    image: "https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=800&auto=format&fit=crop"
+    title: "LeNoir FOUNDATION",
+    description: "A comprehensive NGO platform built to support community development initiatives, featuring donation systems, event management, and volunteer coordination tools.",
+    githubUrl: "https://github.com/mgcinishaun524-source/lenoirfoundation.git",
+    demoUrl: "https://lenoirfoundation.vercel.app/",
+    image: "https://images.unsplash.com/photo-1559027615-cd4628902d4a?q=80&w=800&auto=format&fit=crop"
   },
   {
-    title: "WEATHER APP",
-    description: "A real-time weather dashboard integrating third-party REST APIs (OpenWeather) to display global atmospheric data with dynamic visual states.",
-    githubUrl: "https://github.com/mgcinishaun524-source/Weather-App.git",
-    demoUrl: "https://github.com/mgcinishaun524-source/Weather-App.git",
-    image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?q=80&w=800&auto=format&fit=crop"
+    title: "VALZ COSMETICS",
+    description: "A premium cosmetics e-commerce website featuring product showcases, shopping cart functionality, and a modern aesthetic design tailored for beauty brands.",
+    demoUrl: "https://valzcosmetic.netlify.app/",
+    image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?q=80&w=800&auto=format&fit=crop"
   }
 ];
 
