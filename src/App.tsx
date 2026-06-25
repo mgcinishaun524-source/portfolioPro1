@@ -162,7 +162,7 @@ export default function App() {
             </div>
             <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter mb-10 leading-none">The Vision.</h2>
             <p className={`text-base leading-relaxed mb-12 border-l-2 pl-8 ${isDark ? 'text-zinc-400 border-zinc-800' : 'text-zinc-600 border-zinc-200'}`}>
-              I am a UX/UI Designer and Researcher with Lenoir Foundation, specializing in building robust digital infrastructures that combine aesthetic elegance with technical excellence. My approach is rooted in precision and a deep understanding of modern web technologies.
+              I am a Full-Stack Software Engineer specializing in advanced digital development, dedicated to building robust, offline-first infrastructures and automated platform solutions. My approach bridges technical excellence with high-performance execution, transforming complex compliance, logic, and data challenges into seamless, high-contrast digital experiences.
             </p>
             <div className={`grid grid-cols-2 gap-16 border-t pt-12 ${isDark ? 'border-zinc-800' : 'border-zinc-200'}`}>
               <div>
