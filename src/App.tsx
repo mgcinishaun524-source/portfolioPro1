@@ -10,15 +10,22 @@ import { ProjectCard } from "@/components/ui/ProjectCard";
 import { Timeline } from "@/components/ui/Timeline";
 import { SkillBadge } from "@/components/ui/SkillBadge";
 import { TestimonialGrid } from "@/components/ui/TestimonialGrid";
+import { InteractiveName } from "@/components/ui/InteractiveName";
 
 export default function App() {
   const [isDark, setIsDark] = useState(true);
   const toggleTheme = () => setIsDark(!isDark);
 
+  // Main website content
   return (
-    <div className={`min-h-screen font-sans selection:bg-zinc-500/30 transition-colors duration-500 relative flex flex-col justify-between ${
-      isDark ? "bg-[#030303] text-zinc-100" : "bg-[#fcfcfc] text-zinc-800"
-    }`}>
+    <motion.div 
+      className={`min-h-screen font-sans selection:bg-zinc-500/30 transition-colors duration-500 relative flex flex-col justify-between ${
+        isDark ? "bg-[#030303] text-zinc-100" : "bg-[#fcfcfc] text-zinc-800"
+      }`}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1, ease: "easeOut" }}
+    >
       {/* Background radial gradient */}
       <div className={`fixed inset-0 pointer-events-none z-0 transition-opacity duration-1000 ${
         isDark 
@@ -261,8 +268,33 @@ export default function App() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-24 md:py-40 px-6 relative z-10">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-24">
+      <section id="contact" className="py-24 md:py-40 px-6 relative overflow-hidden">
+        {/* Video Background */}
+        <div className="absolute inset-0 w-full h-full overflow-hidden z-0">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover"
+            style={{
+              opacity: isDark ? 0.25 : 0.15,
+              mixBlendMode: isDark ? 'screen' : 'multiply',
+            }}
+          >
+            <source src="/12778064_3840_2160_30fps.mp4" type="video/mp4" />
+          </video>
+          {/* Gradient overlay for readability */}
+          <div 
+            className={`absolute inset-0 ${
+              isDark 
+                ? 'bg-gradient-to-b from-black/40 via-black/60 to-black/80' 
+                : 'bg-gradient-to-b from-white/40 via-white/60 to-white/80'
+            }`}
+          />
+        </div>
+
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-24 relative z-10">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -329,8 +361,35 @@ export default function App() {
       </section>
 
       {/* Footer */}
-      <footer className={`py-12 px-6 border-t z-10 ${isDark ? 'border-zinc-800 bg-black/50' : 'border-zinc-200 bg-zinc-50/50'}`}>
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+      <footer className={`relative py-12 px-6 border-t z-10 overflow-hidden ${isDark ? 'border-zinc-800' : 'border-zinc-200'}`}>
+        {/* Video Background */}
+        <div className="absolute inset-0 w-full h-full overflow-hidden">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover"
+            style={{
+              opacity: isDark ? 0.15 : 0.1,
+              mixBlendMode: isDark ? 'screen' : 'multiply',
+            }}
+          >
+            <source src="/PixVerse_V6_Image_Text_540P_30Second_Video_Pro (1).mp4" type="video/mp4" />
+            {/* Fallback background */}
+          </video>
+          {/* Gradient overlay */}
+          <div 
+            className={`absolute inset-0 ${
+              isDark 
+                ? 'bg-gradient-to-t from-black via-black/80 to-black/60' 
+                : 'bg-gradient-to-t from-white via-white/80 to-white/60'
+            }`}
+          />
+        </div>
+
+        {/* Content */}
+        <div className="relative z-10 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="flex items-center space-x-2.5">
             <span className="font-display font-black tracking-tight text-xl uppercase">
               Mgcini Shaun
@@ -350,6 +409,9 @@ export default function App() {
           </div>
         </div>
       </footer>
-    </div>
+
+      {/* Interactive Name */}
+      <InteractiveName isDark={isDark} />
+    </motion.div>
   );
 }
