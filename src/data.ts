@@ -1,10 +1,53 @@
 export const projects = [
   {
+    title: "DEVFLOW AI",
+    description: "A high-performance neural command center for software engineers. Features dark syntax AI, lightning-fast execution Kanban, source telemetry, and terminal sandboxing. Built for peak engineering velocity. [Work in Progress]",
+    githubUrl: "https://github.com/mgcinishaun524-source/DevFlowAi.git",
+    demoUrl: "https://dev-flow-ai-liard.vercel.app/",
+    image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=800&auto=format&fit=crop",
+    status: "wip"
+  },
+  {
     title: "AGRILINK",
     description: "A full-stack agricultural marketplace built with React, Node.js, and PostgreSQL, featuring real-time consumer-to-producer messaging and secure payment gateways.",
     githubUrl: "https://github.com/mgcinishaun524-source",
     demoUrl: "https://mgcinishaunportfolio.netlify.app/#",
     image: "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    title: "CRYPTOORG",
+    description: "A cryptocurrency organization platform built with React and TypeScript, featuring modern UI/UX for crypto trading, portfolio management, and real-time market data visualization.",
+    githubUrl: "https://github.com/mgcinishaun524-source/cryptoorg.git",
+    demoUrl: "https://cryptoorg-nine.vercel.app/",
+    image: "https://images.unsplash.com/photo-1621761191319-c6fb62004040?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    title: "H & S LUXURY HAMPERS",
+    description: "Bespoke luxury e-commerce platform for curated gift hampers and floral artistry in Zimbabwe. Features a 5-step custom hamper builder, white-glove delivery scheduling, and artisanal product catalogs with real-time pricing.",
+    githubUrl: "https://github.com/mgcinishaun524-source/hellenandsharon.git",
+    demoUrl: "https://hands-topaz.vercel.app/",
+    image: "https://images.unsplash.com/photo-1513885535751-8b9238bd345a?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    title: "FILD LOGISTICS",
+    description: "Enterprise freight operations platform for Southern Africa (SADC) trade corridors. Features real-time shipment telemetry, interactive corridor mapping with Leaflet, multi-step freight rate calculator, and customs pre-clearance systems.",
+    githubUrl: "https://github.com/mgcinishaun524-source/finalfildlogistics.git",
+    demoUrl: "https://fiildlogistics.vercel.app/",
+    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    title: "KINGS PHARMACY",
+    description: "Community pharmacy website for Zimbabwe featuring prescription fulfillment services, product listings, health consultations, and mobile-responsive design with React and modern web technologies.",
+    githubUrl: "https://github.com/mgcinishaun524-source/kingspharmacyy.git",
+    demoUrl: "https://kingspharmacyy.vercel.app/",
+    image: "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    title: "ADOBE REBUILD",
+    description: "A comprehensive rebuild of Adobe's web presence with enhanced features, modern TypeScript architecture, optimized performance, and improved user experience. Showcases cutting-edge web development best practices.",
+    githubUrl: "https://github.com/mgcinishaun524-source/AdobeFinal.git",
+    demoUrl: "https://adobe-final-olive.vercel.app/",
+    image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=800&auto=format&fit=crop"
   },
   {
     title: "FOOD APP DESIGN",
@@ -31,7 +74,7 @@ export const projects = [
     description: "A comprehensive NGO platform built to support community development initiatives, featuring donation systems, event management, and volunteer coordination tools.",
     githubUrl: "https://github.com/mgcinishaun524-source/lenoirfoundation.git",
     demoUrl: "https://lenoirfoundation.vercel.app/",
-    image: "https://images.unsplash.com/photo-1559027615-cd4628902d4a?q=80&w=800&auto=format&fit=crop"
+    image: "https://www.lenoirfoundation.com/lenoir-logo.png"
   },
   {
     title: "VALZ COSMETICS",
@@ -95,7 +138,13 @@ export const testimonials = [
     role: "TECHNICAL ARCHITECT",
     company: "Enterprise Systems",
     content: "Mgcini's architectural thinking and problem-solving skills are beyond his years. He approaches challenges with a systematic mindset, considering scalability, security, and maintainability. His contributions to our marketplace platform were instrumental to its success."
+  },
+  {
+    name: "THANDO",
+    role: "PROJECT LEAD",
+    company: "Innovation Hub",
+    content: "Mgcini brings a unique blend of creativity and technical rigor to every project. His ability to translate complex requirements into elegant solutions is exceptional. The DevFlow AI and logistics platforms demonstrate his versatility and commitment to delivering impactful software."
   }
 ];
 
-export const profileImage = "/profile.png";
+export const profileImage = "https://media.licdn.com/dms/image/v2/D4D03AQGXx2uahB_GbQ/profile-displayphoto-crop_800_800/B4DZ.ZXOTAK0AM-/0/1784984430823?e=1790208000&v=beta&t=sXlc9OFkX70Ky16XvUh5RcSHOI-n0n8fZeEqPJHppAk";
